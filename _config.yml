@@ -1,6 +1,6 @@
 # Site settings 配置站点
-title: '毛玲玲的独立博客'
-description: '前端开发者，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
+title: 'Lin的独立博客'
+description: '千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: 'Lin, Lin的独立博客, Lin的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
 url: 'https://Lucky-Mll.github.io/' # your host
 
@@ -26,7 +26,7 @@ footer:
 # Author 配置博主信息
 author: 'Lin'
 #nickname: '悟空'
-bio: '前端开发者，热爱技术&设计，简单乐观爱创造;'
+bio: '前端开发者，热爱技术&设计，简单乐观爱创造;如果调试一个程序让你很苦恼，千万不要放弃，成功永远在拐角之后，除非你走到拐角，否则你永远不知道你离他多远，所以，请记住，坚持不懈，直到成功'
 avatar: '/assets/img/like.jpg'
 
 # Search
