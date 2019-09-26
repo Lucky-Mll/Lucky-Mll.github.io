@@ -57,7 +57,7 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   weibo: '//weibo.com/u/6026220170'
-  zhihu: '//zhihu.com'
+  juejin: '//juejin.im/user/5d8c7b56f265da5ba74515f6'
   instagram: '//www.instagram.com/steveliaocn'
   github: '//github.com/Lucky-Mll'
 
