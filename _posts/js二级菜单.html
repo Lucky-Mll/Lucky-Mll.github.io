@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            background: palevioletred;
+            margin-top: 100px;
+        }
+
+        ul li {
+            width: 100px;
+            display: inline-block;
+            background: #000;
+            position: relative;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        ul li ul {
+            display: none;
+            position: absolute;
+            margin-top:0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="ul">
+        <li class="li">
+            <a href="#">水果</a>
+            <ul>
+                <li><a href="#">香蕉</a></li>
+                <li><a href="#">梨</a></li>
+                <li><a href="#">桃</a></li>
+                <li><a href="#">橘子</a></li>
+                <li><a href="#">橙子</a></li>
+            </ul>
+        </li>
+        <li class="li">
+            <a href="#">产品</a>
+            <ul>
+                <li><a href="#">手机</a></li>
+                <li><a href="#">电脑</a></li>
+                <li><a href="#">平板</a></li>
+                <li><a href="#">手表</a></li>
+                <li><a href="#">电视</a></li>
+            </ul>
+        </li>
+        <li class="li">
+            <a href="#">衣服</a>
+            <ul>
+                <li><a href="#">连衣裙</a></li>
+                <li><a href="#">运动装</a></li>
+                <li><a href="#">哈伦裤</a></li>
+                <li><a href="#">毛衣</a></li>
+                <li><a href="#">打底</a></li>
+            </ul>
+        </li>
+        <li class="li">
+            <a href="#">职务</a>
+            <ul>
+                <li><a href="#">职员</a></li>
+                <li><a href="#">经理</a></li>
+                <li><a href="#">前台</a></li>
+                <li><a href="#">清洁</a></li>
+                <li><a href="#">助理</a></li>
+            </ul>
+        </li>
+        <li class="li">
+            <a href="#">学校</a>
+            <ul>
+                <li><a href="#">清华</a></li>
+                <li><a href="#">北大</a></li>
+                <li><a href="#">华北</a></li>
+                <li><a href="#">复旦</a></li>
+                <li><a href="#">同济</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <script>
+        window.onload = function () {
+            var Ul = new ul();
+            Ul.over();
+        }
+        function ul() {
+            this.oul = document.getElementById("ul");
+            this.oli = document.getElementsByClassName('li');
+            this.oul1 = this.oul.getElementsByTagName('ul');
+        }
+        ul.prototype.over = function () {
+            var This = this;
+            for (var i = 0; i < this.oli.length; i++) {
+                this.oli[i].index = i;
+                this.oli[i].onmouseover = function () {
+                    for (var j = 0; j < This.oul1.length; j++) {
+                        if (this.index == j) {
+                            This.oul1[j].style.display = 'block';
+                            this.style.background = 'cadetblue';
+                        }
+                    }
+                }
+                this.oli[i].onmouseout = function () {
+                    This.oul1[this.index].style.display = 'none';
+                    this.style.background = '';
+                }
+            }
+        }	
+    </script>
+</body>
+
+</html>
